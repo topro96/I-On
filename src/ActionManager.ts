@@ -38,8 +38,7 @@ export default class ActionManager {
   }
 
   public getCurrentAction() {
-    if (this.actions.length <= 0) return null;
-
+    if (this.actions.length <= 0 && this.actions.length > 0) return this.actions[0];
     return this.actions[this.current - 1];
   }
 
